@@ -2,6 +2,7 @@
 
 #app {
     position: relative;
+    scroll-behavior: smooth;
     .during_night {
         position: fixed;
         bottom: 50px;

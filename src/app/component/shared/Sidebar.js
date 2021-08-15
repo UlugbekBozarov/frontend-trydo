@@ -1,41 +1,41 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, Container, Button } from 'reactstrap'
+// import { useLocation } from 'react-router-dom';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Container, Button } from 'reactstrap'
 import '../../../assets/styles/_sidebar.scss'
 
 const Sidebar = () => {
-    let location = useLocation();
+    // let location = useLocation();
     const [links] = useState([
         {
-            path: "/",
+            path: "header",
             link: "Home"
         },
         {
-            path: "/service",
+            path: "section_1",
             link: "Service"
         },
         {
-            path: "/about",
+            path: "section_2",
             link: "About"
         },
         {
-            path: "/portfolio",
+            path: "section_7",
             link: "Portfolio"
         },
         {
-            path: "/team",
+            path: "section_5",
             link: "Team"
         },
         {
-            path: "/testimonial",
+            path: "section_6",
             link: "Testimonial"
         },
         {
-            path: "/blog",
+            path: "section_9",
             link: "Blog"
         },
         {
-            path: "/contact",
+            path: "section_8",
             link: "Contact"
         }
     ])
@@ -67,7 +67,7 @@ const Sidebar = () => {
                                 links.map((l, i) => {
                                     return (
                                         <NavItem key={i}>
-                                            <Link to={l.path} className={location.pathname === l.path ? "nav-link active" : "nav-link"} >{l.link}</Link>
+                                            <NavLink href={"#" + l.path} >{l.link}</NavLink>
                                         </NavItem>
                                     )
                                 })
