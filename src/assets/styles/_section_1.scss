@@ -1,0 +1,150 @@
+section#section_1 {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    .card_container {
+        padding: 20px;
+        .card {
+            cursor: pointer;
+            margin-top: 4px;
+            border: 0;
+            transition: all 0.2s ease-in-out;
+            padding: 35px 14px !important;
+            border-radius: 10px;
+            .card-body {
+                padding: 0;
+                svg {
+                    margin-bottom: 23px;
+                    font-size: 54px;
+                    font-weight: 300;
+                    // color: red;
+                }
+                .card-title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 14px;
+                }
+                .card-text {
+                    font-weight: 500;
+                }
+            }
+
+            
+
+            &:hover {
+                margin-top: 0;
+                margin-bottom: 4px;
+            }
+        }
+        @media (min-width: 768px) {
+            .card {
+                .card-title {
+                    font-size: 24px !important;
+                }
+                .card-text {
+                    font-size: 18px !important;
+                    line-height: 30px !important;
+                }
+            }
+        }
+        @media (min-width: 992px) {
+            .card {
+                padding: 33px 22px !important;
+            }
+        }
+        @media (min-width: 1200px) {
+            .card {
+                padding: 60px 45px !important;
+            }
+        }
+    }
+}
+
+.during {
+    section#section_1 {
+        .card_container {
+            .card {
+                background: -webkit-linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+                .card-body {
+                    .card-title, .card-text, svg {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.night {
+    section#section_1 {
+        .card_container {
+            .card {
+                background: -webkit-linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+                .card-body {
+                    .card-title, svg {
+                        color: #fff;
+                    }
+                    .card-text {
+                        color: rgba(198, 201, 216, 0.75);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .during {
+        section#section_1 {
+            .card_container {
+                .card {
+                    background: #f6f6f6;
+    
+                    .card-body {
+                        svg {
+                            color: #f9004d;
+                        }
+                        .card-title {
+                            color: #1f1f25;
+                        }
+                        .card-text {
+                            color: rgba(29, 29, 36, 0.75);
+                        }
+                    }
+                    &:hover {
+                        background: -webkit-linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+                        .card-body {
+                            .card-title, .card-text, svg {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .night {
+        section#section_1 {
+            .card_container {
+                .card {
+                    background: #000000;
+    
+                    .card-body {
+                        svg {
+                            color: #f9004d;
+                        }
+                        .card-title {
+                            color: #fff;
+                        }
+                    }
+                    &:hover {
+                        background: -webkit-linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+                        .card-title, .card-text, svg {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

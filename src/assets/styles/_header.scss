@@ -1,0 +1,82 @@
+header#header {
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url("../images/bg-image-26.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00010c;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+    .header_block {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-size: 36px;
+            line-height: 45px;
+            text-align: center;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            
+            background: -webkit-linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            margin-bottom: 20px;
+        }
+        p {
+            color: #c6c9d8;
+            font-size: 16px !important;
+            line-height: 28px !important;
+            text-align: center;
+            margin: 0;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 4px;
+            transition: all 0.28s ease-in-out;
+            &:hover {
+                margin-top: 0;
+                margin-bottom: 4px;
+            }
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 60px !important;
+                line-height: 82px !important;
+                margin-bottom: 18px;
+            }
+            p {
+                font-size: 24px !important;
+                line-height: 40px !important;
+            }
+        }
+        @media (min-width: 992px) {
+            h1 {
+                font-size: 72px !important;
+            }
+            p {
+                font-size: 24px !important;
+                line-height: 40px !important;
+                padding: 0 16%;
+            }
+        }
+    }
+}
