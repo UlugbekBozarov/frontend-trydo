@@ -50,7 +50,7 @@ section#section_5 {
                 width: 100%;
                 height: 50px;
                 padding-bottom: 20px;
-                p {
+                span {
                     position: absolute;
                     width: 100%;
                     top: 0;
@@ -109,10 +109,8 @@ section#section_5 {
                 .card-title h4 {
                     opacity: 1;
                     transform: translateY(0);
-                    // visibility: visible;
-                    // transition: all 0.5s ease-in-out;
                 }
-                .card-text p {
+                .card-text span {
                     opacity: 1;
                     transform: translateY(0);
                 }
@@ -120,7 +118,6 @@ section#section_5 {
             ul.messenger {
                 li {
                     opacity: 1;
-                    // font-size: 14px;
                 }
             }
             &::after {

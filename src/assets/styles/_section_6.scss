@@ -137,6 +137,12 @@ section#section_6 {
         .section_title {
             p {
                 color: #fff;
+                &::after {
+                    display: none !important;
+                }
+                &::before {
+                    display: none !important;
+                }
             }
             h6 {
                 color: #8c8c8c;

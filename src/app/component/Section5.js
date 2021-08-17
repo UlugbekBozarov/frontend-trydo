@@ -56,7 +56,7 @@ const Section5 = () => {
                                                 <h4>{s.name}</h4>
                                             </CardTitle>
                                             <CardText>
-                                                <p>{s.profession}</p>
+                                                <span>{s.profession}</span>
                                             </CardText>
                                         </CardBody>
                                         <ul className="messenger">
