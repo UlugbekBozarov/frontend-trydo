@@ -11,7 +11,7 @@ import Portfolio from './component/portfolio/Portfolio';
 import Services from './component/services/Services';
 import Sidebar from './component/sidebar/Sidebar';
 import SkilledTeam from './component/skilled-team/SkilledTeam';
-import Users from './component/users/Users';
+import Testimonial from './component/testimonial/Testimonial';
 
 function App() {
   const [night, setNight] = useState(false);
@@ -38,7 +38,7 @@ function App() {
       <Portfolio />
       <OurFunFact />
       <SkilledTeam />
-      <Users />
+      <Testimonial />
       <OurPortfolio />
       <Contact />
       <Brand />

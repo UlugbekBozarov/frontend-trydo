@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Card, Container } from 'reactstrap'
-import './users.scss'
+import './testimonial.scss'
 
-const Users = () => {
+const Testimonial = () => {
     const [s5] = useState([
         "/images/client/testimonial-1.jpg",
         "/images/client/testimonial-2.jpg",
@@ -15,7 +15,7 @@ const Users = () => {
     ])
     const [active, setActive] = useState(0);
     return (
-        <section id="users">
+        <section id="testimonial">
             <Container>
                 <div className="section_title">
                     <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.</p>
@@ -40,4 +40,4 @@ const Users = () => {
     )
 }
 
-export default Users
+export default Testimonial

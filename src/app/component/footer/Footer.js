@@ -43,7 +43,10 @@ const Footer = () => {
                             </Col>
                             <Col xs="12">
                                 <div className="ff mt-4">
-                                    <p>Copyright © 2021 Rainbow-Themes. All Rights Reserved.</p>
+                                    <p>
+                                        Copyright © 2021  
+                                        <a href="https://ulugbekbozarov-portfolio.netlify.app/">Ulug'bek Bozarov</a>
+                                    </p>
                                 </div>
                             </Col>
                         </Row>

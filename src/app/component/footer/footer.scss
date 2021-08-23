@@ -111,7 +111,11 @@ footer {
         }
         .ff {
             p {
-                color: rgba(198, 201, 216, 0.75);
+                color: rgba(198, 201, 216, 0.75) !important;
+                a {
+                    color: rgba(198, 201, 216, 0.75) !important;
+                    margin-left: 5px;
+                }
             }
         }
         &::before {

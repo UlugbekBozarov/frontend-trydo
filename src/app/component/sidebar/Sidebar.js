@@ -11,31 +11,31 @@ const Sidebar = () => {
             link: "Home"
         },
         {
-            path: "section_1",
+            path: "services",
             link: "Service"
         },
         {
-            path: "section_2",
+            path: "about",
             link: "About"
         },
         {
-            path: "section_7",
+            path: "portfolio",
             link: "Portfolio"
         },
         {
-            path: "section_5",
+            path: "skilled_team",
             link: "Team"
         },
         {
-            path: "section_6",
+            path: "testimonial",
             link: "Testimonial"
         },
         {
-            path: "section_9",
+            path: "our_portfolio",
             link: "Blog"
         },
         {
-            path: "section_8",
+            path: "contact",
             link: "Contact"
         }
     ])
@@ -67,7 +67,7 @@ const Sidebar = () => {
                                 links.map((l, i) => {
                                     return (
                                         <NavItem key={i}>
-                                            <NavLink href={"#" + l.path} >{l.link}</NavLink>
+                                            <NavLink href={"/" + l.path} >{l.link}</NavLink>
                                         </NavItem>
                                     )
                                 })
