@@ -67,7 +67,7 @@ const Sidebar = () => {
                                 links.map((l, i) => {
                                     return (
                                         <NavItem key={i}>
-                                            <NavLink href={"/" + l.path} >{l.link}</NavLink>
+                                            <NavLink href={"#" + l.path} >{l.link}</NavLink>
                                         </NavItem>
                                     )
                                 })
